@@ -27,13 +27,13 @@ public class Program {
             ChessPosition target = UI.readChessPosition(sc);
 
             ChessPiece caturedPiece = chessMatch.performChessmove(source, target);
-            } catch (ChessException e) {
-                System.out.println(e.getMessage());
-                sc.nextLine();
-            } catch (InputMismatchException e) {
-                System.out.println(e.getMessage());
-                sc.nextLine();
-            }
+        } catch (ChessException e) {
+            System.out.println(e.getMessage());
+            sc.nextLine();
+        } catch (InputMismatchException e) {
+            System.out.println(e.getMessage());
+            sc.nextLine();
+        } 
         }
     }
 }
